@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -27,11 +25,7 @@
 </head>
 
 <body>
-
     <section data-bs-version="5.1" class="menu menu1 coinm5 cid-tA5kufWVvb" once="menu" id="menu1-0">
-
-
-
         <nav class="navbar navbar-dropdown navbar-expand-lg">
             <div class="menu_box container-fluid">
                 <div class="navbar-brand d-flex d-lg-none">
@@ -51,7 +45,6 @@
             </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-brand d-none d-lg-flex">
-
                         <span class="navbar-caption-wrap"><a class="navbar-caption display-5" href="../index.html">BlockchainDeFi
                         </a></span>
                     </div>
